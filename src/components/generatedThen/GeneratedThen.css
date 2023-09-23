@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+.generated-then h2, .generated-then p{
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+} 
+.generated-then{
+    overflow-y :auto;
+    
+}
+
+.generated-then-button {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .generated-then-button  {
+    display: none; /* Hide the text for screens smaller than 600px */
+  }
+}
+
+/* Add corner borders to the card */
+.corner-border {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgb(124, 124, 124); /* Adjust the border properties as needed */
+  }
+  /* Add this in your CSS */
+.fade-in-letters > span {
+  display: inline-block;
+}
+
+.fade-in-letter {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+  /* Top left corner */
+  .corner-border:nth-child(1) {
+    top: 0px;
+    left :0px;
+    border-bottom-width: 0;
+    border-right-width: 0;
+  }
+  
+  /* Top right corner */
+  .corner-border:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+  }
+  
+  /* Bottom left corner */
+  .corner-border:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    border-top-width: 0;
+  border-right-width: 0;
+  }
+  
+  /* Bottom right corner */
+  .corner-border:nth-child(4) {
+    bottom: 0px;
+    right: 0px;
+    border-top-width: 0;
+    border-left-width: 0;
+  }
+  
+
+  .corner-border-modal{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(255, 255, 255); /* Adjust the border properties as needed */
+  }
+
+
+  .corner-border-modal:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    border-bottom-width: 0;
+    border-right-width: 0;
+  }
+  
+  /* Top right corner */
+  .corner-border-modal:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+  }
+  
+  /* Bottom left corner */
+  .corner-border-modal:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    border-top-width: 0;
+  border-right-width: 0;
+  }
+  
+  /* Bottom right corner */
+  .corner-border-modal:nth-child(4) {
+    bottom: 0px;
+    right: 0px;
+    border-top-width: 0;
+    border-left-width: 0;
+  }
+
+  .corner-border-pop{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(255, 255, 255); /* Adjust the border properties as needed */
+  }
+
+  .corner-border-pop:nth-child(1){
+    top: -8px;
+    left: -8px;
+    border-bottom-width: 0;
+    border-right-width: 0;
+  }
+
+  .corner-border-pop:nth-child(2) {
+    top: -8px;
+    right: -8px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+  }
+
+  .corner-border-pop:nth-child(3) {
+    bottom: -8px;
+    left: -8px;
+    border-top-width: 0;
+    border-right-width: 0;
+  }
+  
+
+  .corner-border-pop:nth-child(4) {
+    bottom: -8px;
+    right: -8px;
+    border-top-width: 0;
+    border-left-width: 0;
+  }

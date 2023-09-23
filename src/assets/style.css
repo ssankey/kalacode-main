@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+:root {
+  --fontsize-xs: 18px;
+  --fontsize-s: 28px;
+  --fontsize-m: 48px;
+  --fontsize-l: 64px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  /* overflow:hidden ; */
+  background-color: black;
+}
+
+.experience{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* outline:none; */
+}
+
+.scrollable-container {
+    /* Altura deseada para el contenedor eliminar cuando este termiando
+    height: 25000px; */
+    font-family: 'Open Sans', sans-serif;
+  overflow:visible;
+  
+}
+.typo-font{
+  font-family: 'Courier Prime', monospace;
+
+}
+.navbar{
+  position: fixed;
+  display: flex ;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 102px;
+  opacity: 0.5;
+}
+
+.navbar > img{
+  width: 150px;
+  padding-left: 24px;
+}
+
+.navbar > button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Courier Prime', monospace;
+  font-size: var(--fontsize-s);
+  padding-right: 24px;
+  cursor: pointer;
+  /* padding-right: 80px; */
+}
+
+.text {
+  display: none;
+  position: fixed;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transition: opacity 0.5s;
+}
+
+p{
+  font-size: 36px;
+}
+
+.text-0{
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+}
+
+.text-0 > footer {
+  font-size: var(--fontsize-xs);
+  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 64px;
+  position: fixed;
+  bottom: 264px;
+}
+
+.text-4 > div > footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.generate-now{
+  display: flex;
+  color: black;
+  align-items: center;
+  width: 300px;
+  height: 58px;
+  margin-right: 20px;
+  padding: 1px;
+}
+
+.button_generate-now{
+  background-color: white;
+  color: black;
+  width: 80%;
+  height: 100%;
+  border: none;
+  align-items: center;
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+  font-size: var(--fontsize-xs);
+  cursor: pointer;
+
+}
+
+.generate-now  svg{
+  width: 20%;
+  margin-left: 55px;
+  top: 1px;
+  height: 97%;
+  background-color: #e17209;
+  cursor: pointer;
+}
+
+.terms-btns{
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+
+.generate-then{
+  width: 300px;
+  height: 58px;
+  display: flex;
+  position: relative; /* Establece el contenedor en posición relativa */
+
+}
+
+.button_generate-then{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: 'Courier Prime', monospace;
+  font-size: var(--fontsize-xs);
+  position: absolute;
+  cursor: pointer;
+  
+}
+
+.button_generate-then--active {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: white;
+  color: black;
+  font-family: 'Courier Prime', monospace;
+  font-size: var(--fontsize-xs);
+  position: absolute;
+  cursor: pointer;
+}
+
+.QrCodeInfo{
+  position: fixed; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  right: -400px;
+  height: 100vh;
+  width: 400px;
+  background-color: #1b1b1b;
+  padding: 32px;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+}
+
+.QrCodeInfo--active{
+  transform: translateX(-400px);
+  transition: transform 0.5s;
+}
+
+.QrCodeInfo > header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.QrCodeInfo > header > svg{
+  border-radius: 50%;
+  border: solid 2px white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+.QrCodeInfo > main {
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  font-size: var(--fontsize-m);
+}
+#QrCodeInfo__prompt {
+  font-size: var(--fontsize-s);
+}
+
+
+.QrCodeInfo > footer {
+  width: 100%;
+  height: 80px;
+}
+
+@media (max-width: 700px) {
+  .text{
+    font-size: var(--fontsize-s);
+  }
+
+  .text-0 > footer {
+    font-size: var(--fontsize-xs);
+    width: 60%;
+    height: 64px;
+    bottom: 128px;
+  }
+
+  .text-4 > div{
+    font-size: var(--fontsize-s);
+    width: 100%;
+  }
+  .text-4 > div > footer{
+    flex-direction: column;
+  }
+  .text-4 > div > footer > div > button{
+    font-size: var(--fontsize-xs);
+  }
+  .generate-then{
+    margin-top: 24px;
+    width: 60%;
+    height: 48px;
+  }
+  .generate-now{
+    margin-top: 24px;
+    width: 60%;
+    height: 48px;
+  }
+}

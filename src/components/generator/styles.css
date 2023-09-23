@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+.modal-text h1,.form-text h1,.form-text p, .form-text label,.form-text input,.form-text button,.form-text textarea{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.corner-button-generator {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(255, 255, 255); /* Adjust the border properties as needed */
+}
+
+.corner-button-generator:nth-child(1) {
+  top: -7px;
+  left: -7px;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+
+.corner-button-generator:nth-child(2) {
+  top: -7px;
+  right: -7px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+
+.corner-button-generator:nth-child(3) {
+  bottom: -7px;
+  left: -7px;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.corner-button-generator:nth-child(4) {
+  bottom: -7px;
+  right: -7px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.corner-button {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: 2px solid rgb(255, 255, 255); /* Adjust the border properties as needed */
+}
+
+
+
+.corner-button:nth-child(1) {
+  top: -3.2px;
+  left: -3.2px;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+
+.corner-button:nth-child(2) {
+  top: -3.2px;
+  right: -3.2px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+
+.corner-button:nth-child(3) {
+  bottom: -3.2px;
+  left: -3.2px;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.corner-button:nth-child(4) {
+  bottom: -3.2px;
+  right: -3.2px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+.corner-border {
+  position: absolute;
+  width: 20px; /* Adjust the length of the corner borders as needed */
+  height: 20px; /* Adjust the length of the corner borders as needed */
+  border: 2px solid rgb(255, 255, 255); /* Adjust the border properties as needed */
+}
+
+
+
+.corner-border:nth-child(1) {
+  top: -2px;
+  left: -2px;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+.corner-border:nth-child(2) {
+  top: -2px;
+  right: -2px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.corner-border:nth-child(3) {
+  bottom: -2px;
+  left: -2px;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.corner-border:nth-child(4) {
+  bottom: -2px;
+  right: -2px;
+  border-top-width: 0;
+  border-left-width: 0;
+}
+
+
+.corner-border-generated{
+  position: absolute;
+  width: 20px; /* Adjust the length of the corner borders as needed */
+  height: 20px; /* Adjust the length of the corner borders as needed */
+  border: 2px solid rgb(255, 255, 255); /* Adjust the border properties as needed */
+}
+
+
+.corner-border-generated:nth-child(1) {
+  top: -2px;
+  left: -2px;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+.corner-border-generated:nth-child(2) {
+  top: -2px;
+  right: -2px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.corner-border-generated:nth-child(3) {
+  bottom: -2px;
+  left: -2px;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.corner-border-generated:nth-child(4) {
+  bottom: -2px;
+  right: -2px;
+  border-top-width: 0;
+  border-left-width: 0;
+}

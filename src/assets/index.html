@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    .corner-button {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border: 2px solid rgb(255, 254, 254);
+    }
+
+    .corner-button:nth-child(1) {
+      top: -2px;
+      left: -2px;
+      border-bottom-width: 0;
+      border-right-width: 0;
+    }
+
+    .corner-button:nth-child(2) {
+      top: -2px;
+      right: -2px;
+      border-bottom-width: 0;
+      border-left-width: 0;
+    }
+
+
+    .corner-button:nth-child(3) {
+      bottom: -2px;
+      left: -2px;
+      border-top-width: 0;
+      border-right-width: 0;
+    }
+
+    .corner-button:nth-child(4) {
+      bottom: -2px;
+      right: -2px;
+      border-top-width: 0;
+      border-left-width: 0;
+    }
+
+    .corner-button-then {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border: 2px solid rgb(255, 254, 254);
+    }
+
+    .corner-button-then:nth-child(1) {
+      top: -3px;
+      left: -3px;
+      border-bottom-width: 0;
+      border-right-width: 0;
+    }
+
+    .corner-button-then:nth-child(2) {
+      top: -3px;
+      right: -3px;
+      border-bottom-width: 0;
+      border-left-width: 0;
+    }
+
+
+    .corner-button-then:nth-child(3) {
+      bottom: -3px;
+      left: -3px;
+      border-top-width: 0;
+      border-right-width: 0;
+    }
+
+    .corner-button-then:nth-child(4) {
+      bottom: -3px;
+      right: -3px;
+      border-top-width: 0;
+      border-left-width: 0;
+    }
+
+    .terms-btns {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      top: 85vh;
+      margin-left: 3-2px;
+    }
+
+    .terms-btns a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #card {
+      width: 250px;
+      aspect-ratio: 3 / 4;
+      border-radius: 2px;
+      padding: 10px;
+      background-color: azure;
+      presentation-level: preserve-3d;
+      flex-shrink: 0;
+      overflow: hidden;
+      transform: translatez(50px) scale(1) rotatex(45deg) rotatez(-30deg);
+      box-shadow: 0px 20px 50px #ffffff10;
+      transition: 400ms ease;
+    }
+
+    #fullscreen-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.73);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      gap: 90px;
+      perspective: 1000px;
+      perspective-origin: 50% 50%;
+    }
+
+    #card .image {
+      width: 80%;
+      height: 80%;
+      border-radius: inherit;
+      object-fit: cover;
+      opacity: 1;
+      transition: 200ms ease;
+    }
+
+    #card:hover {
+      transform: translatez(50px) scale(1.3) rotatex(0deg) rotatez(0deg);
+      box-shadow: none;
+    }
+
+    /* #card:hover>.image {
+      opacity: 0;
+    } */
+
+    #close-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<script type="module" src="main.js"></script>
+
+
+<body>
+  <div class="scrollable-container">
+    <canvas class="experience"></canvas>
+
+    <!-- Text -->
+    <div class="text text-0">
+      <p>POWER AT YOUR FINGER TIPS</p>
+      <footer class="typo-font">SCROLL TO START</footer>
+    </div>
+    <div class="text text-1">
+      <p>HELLO USER</p>
+    </div>
+    <div class="text text-2">
+      <p>WE'RE ABOUT TO GO ON A JOURNEY OF CREATING PERSONALIZED ARTISTIC QR CODES FOR YOUR PERSONAL AND BUDINESS NEEDS
+      <p>
+    </div>
+    <div class="text text-3">
+      <p>WE HOPE YOU LOVE IT</p>
+    </div>
+    <div class="text text-4">
+      <div>
+        <p>POWER AT YOUR FINGERTIPS</p>
+        <footer>
+          <a style="text-decoration: none;" href="/generate">
+            <div
+              style="position: relative;outline: 1px solid rgba(204, 204, 204, 0.597);padding: 1px;outline-offset: 2px;"
+              class="generate-now">
+              <button class="button_generate-now ">GENERATE NOW
+
+                <div class="corner-button"></div>
+                <div class="corner-button"></div>
+                <div class="corner-button"></div>
+                <div class="corner-button"></div>
+                <svg style="position: absolute;" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
+                  stroke="#ffffff">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="m.5 8.5 4-4-4-4" fill="none" stroke="#ffffff" stroke-linecap="round"
+                      stroke-linejoin="round" transform="translate(9 6)"></path>
+                  </g>
+                </svg>
+                <!-- <div className='absolute top-0 left-[11.5rem] py-4  duration-500 w-12 h-full group-hover:bg-[#b6401e]/40 text-white flex justify-center items-center '>`>`</div> -->
+
+              </button>
+            </div>
+          </a>
+          <a href="/generated-then">
+            <div style="position: relative;outline: 1px solid rgba(204, 204, 204, 0.597);outline-offset: 2px;"
+              class="generate-then">
+              <button class="button_generate-then ">GENERATE THEN
+                <div class="corner-button-then"></div>
+                <div class="corner-button-then"></div>
+                <div class="corner-button-then"></div>
+                <div class="corner-button-then"></div>
+              </button>
+              <button class="button_generate-then--active">GENERATE THEN</button>
+            </div>
+        </a>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img src="/images/Group 80.png" alt="logo">
+      <button class="btn">MENU</button>
+    </nav>
+
+    <div id="fullscreen-menu">
+      <div id="card">
+        <img src="../assets/qr-images/qr-2.png" alt="" class="image">
+        <p>Services</p>
+      </div>
+      <div id="card">
+        <img src="../assets/qr-images/qr-3.png" alt="" class="image">
+        <p>Contact Us</p>
+
+      </div>
+      <div id="card">
+        <img src="../assets/qr-images/qr-4.png" alt="" class="image">
+        <p>Services</p>
+
+      </div>
+      <button id="close-menu">Close</button>
+    </div>
+
+
+
+    <aside class="QrCodeInfo">
+      <header>
+        <svg width="64px" height="64px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"> <path d="m7.5 7.5 6 6"></path> <path d="m13.5 7.5-6 6"></path> </g> </g></svg>
+       </header>
+
+       <main>
+        <p>Prompt:</p>
+        <p id="QrCodeInfo__prompt">The best qrcode ever</p>
+
+       </main>
+
+       <footer>
+
+       </footer>
+    </aside>
+
+    <div class="terms-btns">
+      <a href="/">Terms And Conditions</a>
+      <a href="/">Cookies Policies</a>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".btn");
+        const fullscreenMenu = document.getElementById("fullscreen-menu");
+        const closeButton = document.getElementById("close-menu");
+    
+        menuButton.addEventListener("click", function () {
+          fullscreenMenu.style.display = "flex";
+        });
+    
+        closeButton.addEventListener("click", function () {
+          fullscreenMenu.style.display = "none";
+        });
+      });
+    
+    </script>
+</body>
+
+</html>
